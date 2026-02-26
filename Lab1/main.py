@@ -10,7 +10,7 @@ spline = CubicSpline(x, y, bc_type='natural')
 def g(t: float) -> float:
     return float(spline(t) - (6*t + 3))
 
-def bisection(function, left_bound, right_bound, tolerance = 1e-12, max_iterations = 200):
+def bisection(function, left_bound, right_bound, tolerance=1e-12, max_iterations=200):
     f_left = function(left_bound)
     f_right = function(right_bound)
 
